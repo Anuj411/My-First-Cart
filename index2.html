@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Welcome to templates</title>
+    </head>
+    <body>
+        <!--hello this is my first Template.<br/>
+        {{name}} is from {{place}}      To use value of variables in views-->       
+
+        <h1>Enter Your Text here : </h1>
+        <form action="/analyze" method="POST">
+            <textarea name="text" style="margin: 0px; width: 851px; height: 188px;"></textarea><br/>
+            <input type="checkbox" name="removepunc" /> Remove Punctuation<br/>
+            <input type="checkbox" name="fullcaps" /> Uppercase<br/>
+            <input type="checkbox" name="newlnremover"/>New Line Remover<br/>
+            <input type="checkbox" name="extraspremover"/>Extra Space Remover<br/>
+            <input type="checkbox" name="charcounter"/>Character Counter<br/>
+            <button type="submit">Analyze Text</button>
+        </form>
+    </body>
+</html>
